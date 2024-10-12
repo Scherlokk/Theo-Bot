@@ -1,4 +1,5 @@
 import discord
+#import Bot-token.txt
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -8,7 +9,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = MyClient(intents=intents)
-client.run('MTI5Mzk2MzM0NjgxMDM3MjIxNw.GA_k3v.Wg11gVMfu9UkfwX-LWYGcTFTxlmipcgq21m1kA')
+client.run(Bot-token.txt)
 
 async def on_message(self, message):
     if message.author == self.user:
